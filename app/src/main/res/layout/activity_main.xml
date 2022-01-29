@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/lbp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:hint="LBP"
+        android:inputType="numberDecimal"
+        android:onClick="eraseUsd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="117dp"
+        android:ems="10"
+        android:hint="usd"
+        android:inputType="numberDecimal"
+        android:onClick="eraseLbp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbp" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="150dp"
+        android:onClick="convert"
+        android:text="Convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usd" />
+
+    <ImageButton
+        android:id="@+id/lbp_to_usd_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="41dp"
+        android:onClick="lbpToUsd"
+        app:layout_constraintStart_toEndOf="@+id/usd_to_lbp_button"
+        app:layout_constraintTop_toBottomOf="@+id/lbp"
+        app:srcCompat="@android:drawable/stat_sys_download" />
+
+    <TextView
+        android:id="@+id/lbp_to_usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="55dp"
+        android:text="lbp to usd"
+        app:layout_constraintStart_toEndOf="@+id/lbp_to_usd_button"
+        app:layout_constraintTop_toBottomOf="@+id/lbp" />
+
+    <ImageButton
+        android:id="@+id/usd_to_lbp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="41dp"
+        android:onClick="usdToLbp"
+        app:layout_constraintStart_toEndOf="@+id/usd_to_lbp"
+        app:layout_constraintTop_toBottomOf="@+id/lbp"
+        app:srcCompat="@android:drawable/stat_sys_upload" />
+
+    <TextView
+        android:id="@+id/usd_to_lbp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="55dp"
+        android:text="usd to lbp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
