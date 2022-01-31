@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void eraseLbp(View view) {
-        //Erases the text in lbp section
+    //Erases the text in lbp section
         lbp.setText(null);
     }
 
     public void eraseUsd(View view) {
-        //Erases the text in usd section
+    //Erases the text in usd section
         usd.setText(null);
     }
 
