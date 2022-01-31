@@ -3,7 +3,7 @@ package com.samersbr1.spring2022.currencyconverter;
  * MainActivity.java
  * @author Samer Saber
  * Implementing a currency converter from lbp to Dollars and vice versa
- * Last modified on Saturday, 29 of January 2022
+ * Last modified on Monday, 31 of January 2022
  *****************************************************************************/
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected EditText lbp;
     protected EditText usd;
-    protected final double RATE = 22100.00;//Updated on Saturday 29 of January
+    protected final double RATE = 22000.00;//Updated on Monday 31 of January
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
