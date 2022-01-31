@@ -86,4 +86,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbp" />
 
+    <ImageView
+        android:id="@+id/lebanon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbp"
+        app:layout_constraintVertical_bias="0.39"
+        app:srcCompat="@drawable/lebanon" />
+
+    <ImageView
+        android:id="@+id/usa"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/usd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/usd"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/usa" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
