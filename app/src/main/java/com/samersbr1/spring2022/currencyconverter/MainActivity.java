@@ -86,14 +86,6 @@ public class MainActivity extends AppCompatActivity {
     public void convert(View view)
     {
      //Converts the lbp value to usd value and vice versa
-        double usd_input;
-        double lbp_input;
-        double result;
-
-        usd_input   = 0.0;
-        lbp_input   = 0.0;
-        result      = 0.0;
-
         if (lbp.getText().toString().equals("") && usd.getText().toString().equals(""))
         {
          //If both usd and lbp have no input from user
